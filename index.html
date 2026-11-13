@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Trattoria da Luigi - Cucina italiana autentica, sapori tradizionali e ingredienti freschi." />
+  <title>Trattoria da Luigi | Cucina Italiana</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- HEADER / NAVBAR -->
+  <header class="header" id="home">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo">Trattoria <span>da Luigi</span></a>
+
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#home" class="nav__link active-link">Home</a></li>
+        <li><a href="#menu" class="nav__link">Menu</a></li>
+        <li><a href="#chi-siamo" class="nav__link">Chi Siamo</a></li>
+        <li><a href="#contatti" class="nav__link">Contatti</a></li>
+      </ul>
+
+      <button class="nav__toggle" id="nav-toggle" aria-label="Apri menu di navigazione" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero__title">Sapori autentici,<br />trattoria di famiglia</h1>
+        <p class="hero__text">
+          Da tre generazioni portiamo in tavola la cucina italiana tradizionale:
+          pasta fresca, piatti della tradizione e il sorriso di sempre.
+        </p>
+        <a href="#menu" class="btn">Guarda il menù</a>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="section" id="menu">
+      <div class="container">
+        <h2 class="section__title">Il nostro menù</h2>
+        <p class="section__subtitle">Piatti preparati ogni giorno con ingredienti freschi</p>
+
+        <div class="menu__grid">
+          <article class="menu__item">
+            <h3>Antipasti</h3>
+            <ul>
+              <li><span>Bruschetta al pomodoro</span> <span class="price">€ 6,00</span></li>
+              <li><span>Carpaccio di manzo</span> <span class="price">€ 10,00</span></li>
+              <li><span>Insalata di mare</span> <span class="price">€ 12,00</span></li>
+            </ul>
+          </article>
+
+          <article class="menu__item">
+            <h3>Primi</h3>
+            <ul>
+              <li><span>Cacio e pepe</span> <span class="price">€ 11,00</span></li>
+              <li><span>Ragù alla bolognese</span> <span class="price">€ 13,00</span></li>
+              <li><span>Gnocchi al ragù</span> <span class="price">€ 12,00</span></li>
+            </ul>
+          </article>
+          <article class="menu__item">
+            <h3>Secondi</h3>
+            <ul>
+              <li><span>Bistecca alla griglia</span> <span class="price">€ 22,00</span></li>
+              <li><span>Salmone al forno</span> <span class="price">€ 18,00</span></li>
+              <li><span>Parmigiana di melanzane</span> <span class="price">€ 12,00</span></li>
+            </ul>
+          </article>
+
+          <article class="menu__item">
+            <h3>Dolci</h3>
+            <ul>
+              <li><span>Tiramisù</span> <span class="price">€ 5,00</span></li>
+              <li><span>Panna cotta</span> <span class="price">€ 4,50</span></li>
+              <li><span>Cannoli siciliani</span> <span class="price">€ 5,50</span></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHI SIAMO -->
+    <section class="section section--alt" id="chi-siamo">
+      <div class="container">
+        <h2 class="section__title">Chi siamo</h2>
+        <p class="section__subtitle">Una storia di famiglia</p>
+
+        <div class="about">
+          <div class="about__text">
+            <p>
+              La Trattoria da Luigi nasce nel 1962, quando Luigi ha aperto una piccola
+              cucina in centro con un solo tavolo e mille ricette di famiglia.
+              Oggi il locale è ancora gestito dalla stessa famiglia: la pasta è fatta
+              ogni mattina, il pane arriva dal forno del paese e il vino viene
+              scelto tra i piccoli produttori locali.
+            </p>
+            <p>
+              La nostra filosofia è semplice: ingredienti freschi, ricette semplici
+              e il tempo necessario per farle bene.
+            </p>
+            <ul class="about__list">
+              <li>🍝 Pasta fresca fatta in casa</li>
+              <li>🍷 Carta vini con piccoli produttori</li>
+              <li>🌿 Ingredienti da filiera corta</li>
+            </ul>
+          </div>
+          <div class="about__card">
+            <p class="about__hours-title">Orari di apertura</p>
+            <p>Lun – Dom: 12:00 – 14:30</p>
+            <p>Lun – Dom: 19:00 – 23:00</p>
+            <p class="muted">Giovedì solo a cena</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATTI -->
+    <section class="section" id="contatti">
+      <div class="container">
+        <h2 class="section__title">Contattaci</h2>
+        <p class="section__subtitle">Prenota un tavolo o scrivici</p>
+
+        <div class="contact">
+          <form class="form" id="contact-form">
+            <div class="form__row">
+              <label class="form__label">
+                <span>Nome</span>
+                <input type="text" name="nome" placeholder="Il tuo nome" required />
+              </label>
+              <label class="form__label">
+                <span>Email</span>
+                <input type="email" name="email" placeholder="La tua email" required />
+              </label>
+            </div>
+            <label class="form__label">
+              <span>Messaggio</span>
+              <textarea name="messaggio" rows="4" placeholder="Come possiamo aiutarti?" required></textarea>
+            </label>
+            <button type="submit" class="btn btn--block">Invia messaggio</button>
+            <p class="form__status" id="form-status" role="status"></p>
+          </form>
+
+          <div class="contact__info">
+            <p>📍 Via Roma 42, 00100 Roma (RM)</p>
+            <p>📞 +39 06 1234 5678</p>
+            <p>✉️ info@trattoriadaluigi.it</p>
+            <div class="contact__social">
+              <a href="#" aria-label="Facebook">Facebook</a>
+              <a href="#" aria-label="Instagram">Instagram</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__content">
+      <p>© <span id="year"></span> Trattoria da Luigi — Tutti i diritti riservati.</p>
+      <p class="muted">Sito demo realizzato in HTML, CSS e JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
